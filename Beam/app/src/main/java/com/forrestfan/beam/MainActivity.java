@@ -10,7 +10,6 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    TextView mTextMessage;
     BottomNavigationView navigation;
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
@@ -20,13 +19,10 @@ public class MainActivity extends AppCompatActivity {
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
                 case R.id.navigation_home:
-                    mTextMessage.setText("Home");
                     return true;
                 case R.id.navigation_search:
-                    mTextMessage.setText("Search");
                     return true;
                 case R.id.navigation_help:
-                    mTextMessage.setText("Help");
                     return true;
             }
             return false;
@@ -38,9 +34,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mTextMessage = (TextView) findViewById(R.id.group_name);
         navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+
     }
 
 }
