@@ -1,17 +1,20 @@
 package com.forrestfan.beam;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.CardView;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
     BottomNavigationView navigation;
-
+    CardView DepressionGroup;
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
 
@@ -37,6 +40,13 @@ public class MainActivity extends AppCompatActivity {
         navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
+        DepressionGroup = (CardView) findViewById(R.id.depressionCard);
+        DepressionGroup.setOnClickListener(new View.OnClickListener() {
+            public void onClick (View view) {
+                Intent intent = new Intent(MainActivity.this, DepressionGroup.class);
+                startActivity(intent);
+            }
+        });
     }
 
 }
