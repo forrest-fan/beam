@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+  <android.support.constraint.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -20,7 +20,17 @@
             android:textSize="25sp"
             android:textStyle="bold"
             android:textColor="@color/colorPrimaryDark"
-            android:layout_margin="10dp"/>
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chat with others in your group."
+            android:textSize="17sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"/>
         <HorizontalScrollView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -36,10 +46,17 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:id="@+id/depressionCard"
+                android:background="@drawable/card_back"
                 card_view:cardBackgroundColor="@color/white"
                 card_view:cardCornerRadius="4dp"
                 card_view:cardElevation="3dp"
                 card_view:cardUseCompatPadding="true">
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/card_back"
+                    android:adjustViewBounds="true"
+                    android:layout_gravity="center"/>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -71,6 +88,12 @@
                 card_view:cardCornerRadius="4dp"
                 card_view:cardElevation="3dp"
                 card_view:cardUseCompatPadding="true">
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/card_back"
+                    android:adjustViewBounds="true"
+                    android:layout_gravity="center"/>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -82,7 +105,6 @@
                         android:textSize="23sp"
                         android:text="Alcohol"
                         android:layout_gravity="center_horizontal"/>
-
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -103,6 +125,12 @@
                     card_view:cardCornerRadius="4dp"
                     card_view:cardElevation="3dp"
                     card_view:cardUseCompatPadding="true">
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/card_back"
+                        android:adjustViewBounds="true"
+                        android:layout_gravity="center"/>
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -114,7 +142,6 @@
                             android:textSize="23sp"
                             android:text="Abuse"
                             android:layout_gravity="center_horizontal"/>
-
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -128,7 +155,90 @@
                 </android.support.v7.widget.CardView>
             </LinearLayout>
         </HorizontalScrollView>
-
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Find A Group"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Join a group or find an in-person meeting."
+            android:textSize="17sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="9dp"
+            android:layout_marginRight="9dp">
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/beam_group_search"
+                card_view:cardBackgroundColor="@color/white"
+                card_view:cardCornerRadius="4dp"
+                card_view:cardElevation="3dp"
+                card_view:cardUseCompatPadding="true">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_search_white_24dp"
+                        android:layout_gravity="center"
+                        android:tint="@color/colorPrimary" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Beam Groups"
+                        android:layout_gravity="center"
+                        android:textSize="18sp"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/in_person_search"
+                card_view:cardBackgroundColor="@color/white"
+                card_view:cardCornerRadius="4dp"
+                card_view:cardElevation="3dp"
+                card_view:cardUseCompatPadding="true">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_account_circle_black_24dp"
+                        android:layout_gravity="center"
+                        android:tint="@color/colorPrimary" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="In-Person Groups"
+                        android:layout_gravity="center"
+                        android:textSize="18sp"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
     </LinearLayout>
 
     <android.support.design.widget.BottomNavigationView

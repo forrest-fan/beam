@@ -20,7 +20,30 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".DepressionGroup" android:label="Depression Support Group"></activity>
+        <activity
+            android:name=".DepressionGroup"
+            android:label="Depression Support Group" />
+        <activity
+            android:name=".Search"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".SearchResults"
+            android:label="Search Results" />
+        <activity
+            android:name=".AllGroups"
+            android:label="Search Results" />
+        <activity
+            android:name=".ChildAbuse"
+            android:label="Child Abuse" />
+        <activity
+            android:name=".RequestGroup"
+            android:label="Request A Group" />
+        <activity
+            android:name=".RequestSubmitted"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".Talk"
+            android:label="@string/title_activity_talk"></activity>
     </application>
 
 </manifest>

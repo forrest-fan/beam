@@ -1,25 +1,28 @@
 package com.forrestfan.beam;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.ImageView;
-import android.widget.ScrollView;
+import android.widget.Button;
 
-public class DepressionGroup extends AppCompatActivity {
+public class AllGroups extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_depression_group);
+        setContentView(R.layout.activity_all_groups);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        ScrollView scrollView = findViewById(R.id.msgContainer);
-        scrollView.scrollTo(0, scrollView.getBaseline());
 
-        ImageView send = (ImageView)findViewById(R.id.sendIcon);
-
+        Button requestGroup = findViewById(R.id.request_group);
+        requestGroup.setOnClickListener(new View.OnClickListener() {
+            public void onClick (View view) {
+                Intent intent = new Intent (AllGroups.this, RequestGroup.class);
+                startActivity(intent);
+            }
+        });
     }
 
     public boolean onOptionsItemSelected(MenuItem item) {

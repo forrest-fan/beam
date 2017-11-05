@@ -1,25 +1,21 @@
 package com.forrestfan.beam;
 
-import android.support.v7.app.AppCompatActivity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.design.widget.BottomNavigationView;
+import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.ImageView;
-import android.widget.ScrollView;
+import android.widget.TextView;
 
-public class DepressionGroup extends AppCompatActivity {
+public class Talk extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_depression_group);
+        setContentView(R.layout.activity_talk);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        ScrollView scrollView = findViewById(R.id.msgContainer);
-        scrollView.scrollTo(0, scrollView.getBaseline());
-
-        ImageView send = (ImageView)findViewById(R.id.sendIcon);
-
     }
 
     public boolean onOptionsItemSelected(MenuItem item) {

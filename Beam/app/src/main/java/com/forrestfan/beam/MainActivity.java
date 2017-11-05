@@ -24,8 +24,12 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.navigation_home:
                     return true;
                 case R.id.navigation_search:
+                    Intent intent = new Intent (MainActivity.this, Search.class);
+                    startActivity(intent);
                     return true;
                 case R.id.navigation_help:
+                    Intent intent2 = new Intent (MainActivity.this, Talk.class);
+                    startActivity(intent2);
                     return true;
             }
             return false;
@@ -44,6 +48,22 @@ public class MainActivity extends AppCompatActivity {
         DepressionGroup.setOnClickListener(new View.OnClickListener() {
             public void onClick (View view) {
                 Intent intent = new Intent(MainActivity.this, DepressionGroup.class);
+                startActivity(intent);
+            }
+        });
+
+        CardView beamGroupSearch = (CardView) findViewById(R.id.beam_group_search);
+        beamGroupSearch.setOnClickListener(new View.OnClickListener() {
+            public void onClick (View view) {
+                Intent intent = new Intent (MainActivity.this, Search.class);
+                startActivity(intent);
+            }
+        });
+
+        CardView inPersonSearch = (CardView) findViewById(R.id.in_person_search);
+        inPersonSearch.setOnClickListener(new View.OnClickListener() {
+            public void onClick (View view) {
+                Intent intent = new Intent (MainActivity.this, Search.class);
                 startActivity(intent);
             }
         });

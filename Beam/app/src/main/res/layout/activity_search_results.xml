@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.forrestfan.beam.SearchResults">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="You searched for 'Abuse'"
+            android:textSize="16sp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/colorPrimaryDark"/>
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Groups"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginBottom="9dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Child Abuse"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginBottom="7dp"
+            android:id="@+id/child_abuse"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Substance Abuse"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginBottom="7dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Domestic Violence"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginBottom="7dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="See all groups"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp"
+            android:layout_marginBottom="15dp"
+            android:id="@+id/all_groups"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="In-Person Meetings"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginBottom="9dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Violence Anonymous"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginBottom="7dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Recoveries Anonymous"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginBottom="7dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Domestic Violence Meetings"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginBottom="7dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="See all meetings"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp"
+            android:layout_marginBottom="7dp"/>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
